@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start1": "ts-node-dev src/index.ts",
-    "build1": "tsc",
-    "dev1": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "start": "ts-node-dev src/index.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "keywords": [],
   "author": "",
