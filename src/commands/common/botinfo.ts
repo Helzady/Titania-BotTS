@@ -27,7 +27,7 @@ export default new Command({
             .setFooter({ iconURL: botAvatar, text: bot })
             .setTimestamp()
             .setDescription(`Olá ${interaction.user}, veja  minhas informações abaixo:\n
-            \n> 🤖 Nome: \`${bot}\`.\n> 🤖 Dono: \`${interaction.client.users.cache.get(dono || 'Desconhecido')}\`. \n> 🤖 Desenvolvido pelo Grupo \`Rosas Negras\`. \n\n> ⚙️ Membros: \`${membros}\`.\n> ⚙️ Servidores: \`${servidores}\`.\n> ⚙️ Canais: \`${canais}\`.\n> ⚙️ Ping: \`${ping}\`.\n\n> 📚 Linguagem de programação: \`${linguagem}\`.\n> 📚 Livraria: \`${livraria}\`.`)
+            \n> 🤖 Nome: \`${bot}\`.\n> 🤖 Dono: \`${interaction.client.users.cache.get(dono || 'Desconhecido')}\`.\n\n> ⚙️ Membros: \`${membros}\`.\n> ⚙️ Servidores: \`${servidores}\`.\n> ⚙️ Canais: \`${canais}\`.\n> ⚙️ Ping: \`${ping}\`.\n\n> 📚 Linguagem de programação: \`${linguagem}\`.\n> 📚 Livraria: \`${livraria}\`.`)
 
         let row = new ActionRowBuilder<ButtonBuilder>({components: [
             new ButtonBuilder({
