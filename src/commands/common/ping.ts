@@ -11,15 +11,15 @@ export default new Command({
         const startTime = Date.now();
 
         const embed = new EmbedBuilder()
-            .setColor(config.color.purple as ColorResolvable)
+            .setColor(config.color.Purple as ColorResolvable)
             .setAuthor({ name: interaction.client.user.username, iconURL: interaction.client.user?.avatarURL() || undefined })
-            .setDescription(`Olá ${interaction.user.username} \n\`Calculando a latencia do bot!\``)
+            .setDescription(`Olá ${interaction.user.username} \n\`Calculando a latência do bot!\``)
             .setTimestamp()
 
         const embed2 = new EmbedBuilder()
-            .setColor(config.color.purple as ColorResolvable)
+            .setColor(config.color.Purple as ColorResolvable)
             .setAuthor({ name: interaction.client.user.username, iconURL: interaction.client.user?.avatarURL() || undefined })
-            .setDescription(`Olá ${interaction.user.username} \n🏓 A latencia do bot é \`${interaction.client.ws.ping}ms\``)
+            .setDescription(`Olá ${interaction.user.username} \n🏓 A latência do bot é \`${interaction.client.ws.ping}ms\``)
             .setTimestamp()
 
         interaction.reply({ embeds: [embed], ephemeral: true }).then(msg => {

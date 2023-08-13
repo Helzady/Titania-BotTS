@@ -6,7 +6,7 @@ dotenv.config();
 
 export default new Command({
     name: "botinfo",
-    description: "Veja a descrião do bot.",
+    description: "Veja a descrição do bot.",
     type: ApplicationCommandType.ChatInput,
     run({ interaction, options }) {
 
@@ -21,7 +21,7 @@ export default new Command({
         let ping = interaction.client.ws.ping;
     try {
         let embed = new EmbedBuilder()
-            .setColor(config.color.darkPurple as ColorResolvable)
+            .setColor(config.color.DarkViolet as ColorResolvable)
             .setTitle(`Informações do bot`)
             .setThumbnail(botAvatar)
             .setFooter({ iconURL: botAvatar, text: bot })
@@ -49,7 +49,7 @@ export default new Command({
 
         interaction.reply({ embeds: [embed], components: [row]})
     } catch (err) {
-        console.log('Ocorreo um erro:' + err);
+        console.log('Ocorreu um erro:' + err);
         interaction.reply({content: "Ocorreu um erro ao executar o comando.", ephemeral: true })
     }
     },
